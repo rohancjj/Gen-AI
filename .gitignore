@@ -1,9 +1,0 @@
-.env
-.venv/
-__pycache__/
-*.pyc
-.python-version
-pyproject.toml
-main.py
-test.py
-uv.lock
