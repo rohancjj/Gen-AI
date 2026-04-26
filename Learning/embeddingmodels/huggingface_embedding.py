@@ -1,6 +1,10 @@
-from dotenv import load_dotenv
-load_dotenv()
+from sentence_transformers import SentenceTransformer
 
+model = SentenceTransformer('all-MiniLM-L6-v2')
 
-from langchain_huggingface import HuggingFaceEmbeddings
+embeddings = model.encode([
+    "Machine learning is powerful",
+    "Deep learning is a subset of ML"
+])
 
+print(len(embeddings[0]))  # vector size (384)
