@@ -14,4 +14,4 @@ text = [
 ]
 vector = embeddings.embed_documents(text)
 
-print(len(vector))
+print(vector)
