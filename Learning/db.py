@@ -24,7 +24,7 @@ vectorstore = chroma.from_documents(
 text = [
     "Hello this is Rohan  Jangir",
     "Hello your name is YouTube",
-    "And you all are very beautifull"
+    "And you all are very beautiful"
 ]
 vector = embeddings.embed_documents(text)
 
